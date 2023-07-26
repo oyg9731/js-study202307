@@ -71,23 +71,31 @@ let secret = Math.floor(Math.random()* 100)+ 1;
 console.log(secret);
 let min = 1, max = 100;
 
+// 초기 카운트 수
+let initCount = 5;
+
+// 카운트다운 변수
+let countDown= initCount;
+
 while(true){
 
 
     // 사용자의정답 입력값
     let answer = +prompt(`숫자를 입력! [${min} ~ ${max}]`);
 
+    
     // 입력값 유효성 검사
     // 지금 입력범위 안의 값인가??
     if(answer < min || answer > max){
         alert(`범위 안의 값을 입력하세요!!!`);
         continue; //다시 위로 올려보내기
     }
-    // 업 다운 판단
+    countDown--; // 카운트 감소
 
+    // 업 다운 판단
     // 정답일경우
     if(secret === answer){
-        alert(`정답입니다!`);
+        alert(`정답입니다! ${initCount - countDown}번 만에 맞췄습니다!`);
         break;
     } else if(secret > answer){
         alert(`UP!`);
@@ -96,7 +104,15 @@ while(true){
         alert(`DOWN!`);
         max = answer -1
     }
-}
+
+    if(countDown === 0){
+        alert(`TT 패배하셨습니다! 정답은 ${secret}였습니다!`);
+        break;
+    }else{
+        alert(`${countDown}번의 기회가 남았습니다.`)
+    }
+
+} // end while loop
 alert(`수고하셨습니다!`);
 
 // ===========================================================
