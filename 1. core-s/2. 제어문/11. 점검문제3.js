@@ -188,6 +188,11 @@
 // =================================================================
 
 let qNum = 1;
+
+// 정답, 오답 횟수
+let correctCount = 0;
+let wrongCount = 0;
+
 while(true){
     // 랜덤 정수 2개를생성
     let firstNumber = Math.floor(Math.random() * 20) + 1;
@@ -205,6 +210,10 @@ while(true){
 // 정답확인
 if(userAnswer === firstNumber + secondNumber){
     alert(`정답입니다!`);
+    correctCount++;
 }else{
     alert(`틀렸습니다ㅠㅠ`)
-}
+    wrongCount++;
+} // end while
+
+alert(`정답횟수 : ${correctCount}회, 틀린횟수 : ${wrongCount}회`);
