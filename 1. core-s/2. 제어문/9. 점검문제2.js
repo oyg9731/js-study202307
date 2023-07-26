@@ -67,15 +67,36 @@
 //     }
 // }   
 // up down 게임 끝
-let secret = Math.floor(Math.random()* 100)+ 1;
-console.log(secret);
-let min = 1, max = 100;
-
+//=============================================================================
+// up down 강의버전 시작
 // 초기 카운트 수
 let initCount = 5;
 
+
+// 난이도 상수
+const HIGH = 1;
+const MIDDLE = 2;
+const LOW = 3;
+
+// 초기 난이도 설정 선택창 띄우기
+let level = prompt('난이도를 선택하세요!\n# [1. 상(3번의 기회) | 2. 중(6번의 기회) | 3. 하(10번의 기회)]');
+
+if(level === LOW){
+    initCount = 3;
+}else if(level === MIDDLE){
+    initCount = 6;
+}else if(level === HIGH){
+    initCount = 10;
+}else{
+    alert(`잘못 입력했으니깐 난이도 상으로 자동 시작합니다`);
+    initCount = 3;
+}
 // 카운트다운 변수
 let countDown= initCount;
+
+let secret = Math.floor(Math.random()* 100)+ 1;
+console.log(secret);
+let min = 1, max = 100;
 
 while(true){
 
@@ -116,189 +137,3 @@ while(true){
 alert(`수고하셨습니다!`);
 
 // ===========================================================
-
-// 사칙연산 게임 시작
-
-// alert('[즐겁게 문제를 푸시다가 지겨우면 0을 누르세요]');
-// // 난수 1번
-// let a = Math.floor(Math.random() * 50) + 1;
-// // 난수 2번
-// let b = Math.floor(Math.random() * 50) + 1;
-// // 4칙
-// let c = Math.floor(Math.random() * 4) + 1;
-// let cnt = 0;
-// let cnt1 = 0;
-// alert('~~~~~~~~~~난이도를 설정합니다~~~~~~~~~~~');
-// let y = +prompt('1. 상 (1~100) | 2. 중 (1~50) | 3. 하 (1~20)');
-
-// if(y === 1){
-//     for(i = 99; i >= 0; i--){
-//         if(c === 1){
-//             let x = +prompt(`${a} + ${b} = ??`)
-//             if (a + b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         } else if(c === 2){
-//             let x = +prompt(`${a} - ${b} = ??`)
-//             if (a - b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         } else if(c === 3){
-//             let x = +prompt(`${a} * ${b} = ??`)
-//             if (a * b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         } else if(c === 4){
-//             let x = +prompt(`${a} / ${b} = ??`)
-//             if (a / b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         }
-//         if(i === 0){
-//             alert('end');
-//             alert(`맞춘개수 : ${cnt}, 틀린개수 : ${cnt1}`)
-//         }
-//     }
-// }
-// else if(y === 2){
-//     for(i = 49; i >= 0; i--){
-//         if(c === 1){
-//             let x = +prompt(`${a} + ${b} = ??`)
-//             if (a + b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         } else if(c === 2){
-//             let x = +prompt(`${a} - ${b} = ??`)
-//             if (a - b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         } else if(c === 3){
-//             let x = +prompt(`${a} * ${b} = ??`)
-//             if (a * b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         } else if(c === 4){
-//             let x = +prompt(`${a} / ${b} = ??`)
-//             if (a / b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         }
-//         if(i === 0){
-//             alert('end');
-//             alert(`맞춘개수 : ${cnt}, 틀린개수 : ${cnt1}`)
-//         }
-//     }
-// }
-// else if(y === 3){
-//     for(i = 19; i >= 0; i--){
-//         if(c === 1){
-//             let x = +prompt(`${a} + ${b} = ??`)
-//             if (a + b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         } else if(c === 2){
-//             let x = +prompt(`${a} - ${b} = ??`)
-//             if (a - b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         } else if(c === 3){
-//             let x = +prompt(`${a} * ${b} = ??`)
-//             if (a * b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         } else if(c === 4){
-//             let x = +prompt(`${a} / ${b} = ??`)
-//             if (a / b === x){
-//                 alert('정답')
-//                 cnt++;
-//             }
-//             else if(x === 0){
-//                 break;
-//             }else{
-//                 alert('오답')
-//                 cnt1++;
-//             }
-//         }
-//         if(i === 0){
-//             alert('end');
-//             alert(`맞춘개수 : ${cnt}, 틀린개수 : ${cnt1}`)
-//         }
-//     }
-// }
