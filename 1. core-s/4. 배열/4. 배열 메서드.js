@@ -58,7 +58,7 @@ let concated = arr1.concat(arr2);
 console.log(concated);
 
 // splice() : 배열의 특정요소 제거, 삽입 // 원본에서 직접 작용
-console.log('-------------------------------------------');
+console.log('-------------------------------------------12');
 console.log(foodList);
 
 foodList.splice(1,2);
