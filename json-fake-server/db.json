@@ -10,22 +10,5 @@
       "title": "호들갑을근들든들",
       "body": "빵빵이는 빵빵해"
     }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "account": "abc1234",
-      "username": "김철수"
-    },
-    {
-      "id": 2,
-      "account": "def456",
-      "username": "박영희"
-    },
-    {
-      "id": 3,
-      "account": "ggg999",
-      "username": "구구구"
-    }
   ]
 }
