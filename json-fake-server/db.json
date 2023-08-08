@@ -1,29 +1,19 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": 9,
       "title": "냠냠냠 쩝쩝쩝",
       "body": "asasdasfSDgdzfhgdzfhdzfhzdfhdzfh"
     },
     {
-      "id": 2,
-      "title": "호들갑을근들든들",
-      "body": "빵빵이는 빵빵해"
-    },
-    {
-      "title": "뭉탱이로다가 유링게슝",
-      "body": "아이고난!",
-      "id": 3
+      "id": 8,
+      "title": "수정수정~~",
+      "body": "zzzzzz수정수정333zzzzzzz뿡"
     },
     {
       "title": "ㅁㄴㅇㅁㄴㅇㅁㄴㅇ",
       "body": "ㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂ",
-      "id": 4
-    },
-    {
-      "title": "ㅁㄴㅇ",
-      "body": "ㅁㄴㅇ",
-      "id": 5
+      "id": 7
     }
   ]
 }
