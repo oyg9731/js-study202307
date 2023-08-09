@@ -34,13 +34,13 @@
   "followers": [],
   "todos": [
     {
-      "text": "자바스크립트 공부하기",
+      "text": "자바스크립트 뿌시기",
       "done": false,
       "id": 1
     },
     {
       "text": "점심뿌수기",
-      "done": true,
+      "done": false,
       "id": 2
     },
     {
