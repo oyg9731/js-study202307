@@ -32,5 +32,21 @@
     }
   ],
   "followers": [],
-  "todos": []
+  "todos": [
+    {
+      "text": "자바스크립트 공부하기",
+      "done": false,
+      "id": 1
+    },
+    {
+      "text": "점심뿌수기",
+      "done": true,
+      "id": 2
+    },
+    {
+      "text": "운동하기",
+      "done": false,
+      "id": 4
+    }
+  ]
 }
